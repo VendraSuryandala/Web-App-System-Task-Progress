@@ -1,0 +1,11 @@
+const fs = require('fs');
+const p1 = require('./p1.js');
+const p2 = require('./p2.js');
+const p3 = require('./p3.js');
+const p3settings = require('./p3_settings.js');
+const p4a = require('./p4_a.js');
+const p4b = require('./p4_b.js');
+const p4c = require('./p4_c.js');
+const html = p1 + p2 + p3 + p3settings + p4a + p4b + p4c;
+fs.writeFileSync('C:\\Users\\itomm\\.cline\\data\\workspaces\\chat\\it-support-checklist-app\\index.html', html, 'utf8');
+console.log('Successfully compiled index.html with delete sync');
